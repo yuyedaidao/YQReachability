@@ -19,21 +19,19 @@ Pod::Spec.new do |s|
 
   s.description      = '畅媒未来版公共模块-YQReachability'
 
-  s.homepage         = 'https://github.com/iqilu/YQReachability'
+  s.homepage         = 'https://github.com/yuyedaidao/YQReachability'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'wyqpadding@gmail.com' => 'wyqpadding@gmail.com' }
-  s.source           = { :git => 'https://github.com/iqilu/YQReachability.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/yuyedaidao/YQReachability.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'YQReachability/Classes/**/*'
   
-  s.resource_bundles = {
-    'YQReachability' => ['YQReachability/Assets/*.png']
-  }
-
+  s.dependency 'ReachabilitySwift'
+  s.dependency 'RxCocoa'
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'

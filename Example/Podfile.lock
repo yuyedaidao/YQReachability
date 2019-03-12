@@ -1,0 +1,37 @@
+PODS:
+  - ReachabilitySwift (4.3.0)
+  - RxAtomic (4.4.1)
+  - RxCocoa (4.4.1):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.1):
+    - RxAtomic (~> 4.4)
+  - YQReachability (0.1.0):
+    - ReachabilitySwift
+    - RxCocoa
+
+DEPENDENCIES:
+  - ReachabilitySwift
+  - RxCocoa
+  - YQReachability (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ReachabilitySwift
+    - RxAtomic
+    - RxCocoa
+    - RxSwift
+
+EXTERNAL SOURCES:
+  YQReachability:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
+  RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
+  RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+  YQReachability: 0a5224f45c39bdc70b78a3eeee2be25af4e43923
+
+PODFILE CHECKSUM: 212a56e63b49d3bbbfa66af56dd2838cfb477fe0
+
+COCOAPODS: 1.7.0.beta.1

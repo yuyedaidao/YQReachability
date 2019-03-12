@@ -28,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24B83E39F13F1BEA4EC69A4D /* YQReachability.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YQReachability.podspec; path = ../YQReachability.podspec; sourceTree = "<group>"; };
+		24B83E39F13F1BEA4EC69A4D /* YQReachability.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YQReachability.podspec; path = ../YQReachability.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2F50FB240B465AB4F8833D17 /* Pods_YQReachability_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YQReachability_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B175555E81008C4D104CB80 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3B175555E81008C4D104CB80 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		425C40EFD4FCD8DA269F670F /* Pods-YQReachability_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQReachability_Example.debug.xcconfig"; path = "Target Support Files/Pods-YQReachability_Example/Pods-YQReachability_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* YQReachability_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YQReachability_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		B74201DAFB658BFC25A59281 /* Pods_YQReachability_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YQReachability_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCAD0804020CAEF1C9BDE46 /* Pods-YQReachability_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQReachability_Example.release.xcconfig"; path = "Target Support Files/Pods-YQReachability_Example/Pods-YQReachability_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C597346662843D8961B67702 /* Pods-YQReachability_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQReachability_Tests.release.xcconfig"; path = "Target Support Files/Pods-YQReachability_Tests/Pods-YQReachability_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C993F6B666E9E02D510704EA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C993F6B666E9E02D510704EA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				9EF25CC38E2CBF2AD3128953 /* Pods-YQReachability_Tests.debug.xcconfig */,
 				C597346662843D8961B67702 /* Pods-YQReachability_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = QXPHWM9EW2;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = QXPHWM9EW2;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -269,10 +270,18 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YQReachability_Example/Pods-YQReachability_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/YQReachability/YQReachability.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YQReachability.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
