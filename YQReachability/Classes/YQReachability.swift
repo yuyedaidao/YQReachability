@@ -1,5 +1,3 @@
-
-import Reachability
 import RxCocoa
 
 public enum YQReachable {

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YQReachability'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'YQReachability.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,6 @@ Pod::Spec.new do |s|
 
   s.source_files = 'YQReachability/Classes/**/*'
   
-  s.dependency 'ReachabilitySwift'
   s.dependency 'RxCocoa'
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
